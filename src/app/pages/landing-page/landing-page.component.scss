@@ -1,0 +1,11 @@
+.about-system {
+  height: 100%;
+  background: linear-gradient(#ffffff 23.6%, #0455fe 0%);
+}
+
+@media (min-width: 992px) {
+  .differentials {
+    height: 100%;
+    background: linear-gradient(90deg, #ffffff 60%, #0455fe 0%);
+  }
+}

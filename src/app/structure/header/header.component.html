@@ -1,0 +1,42 @@
+<section class="header p-3 d-flex align-items-center justify-content-between justify-content-md-around">
+  <article class="d-flex gap-2">
+    <img class="img-fluid" src="assets/img/logo_vetor_site.svg" alt="Vetor Sistemas" class="mt-1" />
+  </article>
+
+  <article class="d-none d-md-block">
+    <vt-menu></vt-menu>
+  </article>
+
+  <article class="d-none d-md-block">
+    <ng-container [ngTemplateOutlet]="buttonContact"></ng-container>
+  </article>
+
+  <article class="d-md-none">
+    <button class="btn btn-link nav-link" (click)="openOffcanvas(menuOffcanvas)">
+      <fa-icon [icon]="icons.menu"></fa-icon>
+    </button>
+  </article>
+</section>
+
+<ng-template #menuOffcanvas let-offcanvas>
+  <div class="offcanvas-header">
+    <h4 class="offcanvas-title"></h4>
+
+    <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss()"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <vt-menu [column]="true"></vt-menu>
+  </div>
+
+  <div class="offcanvas-footer d-flex justify-content-center mb-2">
+    <ng-container [ngTemplateOutlet]="buttonContact"></ng-container>
+  </div>
+</ng-template>
+
+<ng-template #buttonContact>
+  <button class="btn btn-primary rounded-pill">
+    Contato
+    <fa-icon class="ms-2" [icon]="icons.email"></fa-icon>
+  </button>
+</ng-template>

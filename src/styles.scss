@@ -1,0 +1,15 @@
+$primary: #0455fe !default;
+$carousel-control-color: $primary;
+$carousel-caption-color: $primary;
+$carousel-indicator-active-bg: $primary;
+
+$carousel-indicator-margin-top: 30px;
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+.carousel-inner {
+  margin-bottom: 50px;
+}
+@import 'bootstrap/scss/bootstrap';

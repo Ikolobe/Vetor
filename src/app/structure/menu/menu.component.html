@@ -1,0 +1,17 @@
+<section>
+  <article class="d-flex gap-3" [ngClass]="{ 'flex-column': column }">
+    <button
+      *ngFor="let item of menu"
+      class="btn"
+      [ngClass]="{ 'd-flex w-100': column }"
+      [routerLink]="[item.path]"
+      routerLinkActive="fw-bold"
+    >
+      {{ item.label }}
+    </button>
+    <!-- <button class="btn" [ngClass]="{ 'd-flex w-100': column }">HOME</button>
+    <button class="btn" [ngClass]="{ 'd-flex w-100': column }">Sobre</button>
+    <button class="btn" [ngClass]="{ 'd-flex w-100': column }">Soluções</button>
+    <button class="btn" [ngClass]="{ 'd-flex w-100': column }">Suporte</button> -->
+  </article>
+</section>

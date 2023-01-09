@@ -1,0 +1,16 @@
+.img {
+  height: 60px;
+  width: 60px;
+}
+
+@media (min-width: 992px) {
+  .custom-mw {
+    max-width: 80vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .custom-mw {
+    max-width: 30vh;
+  }
+}

@@ -1,0 +1,17 @@
+.linha-vertical {
+  height: 50px;
+  width: 0.5px;
+  top: 3204px;
+  left: 177px;
+  border: 1px dashed #979797;
+  background: transparent src('src/assets/img/Diferenciais/vertical line.png')
+    0% 0% no-repeat padding-box;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+@media (max-width: 992px) {
+  .custom-fs {
+    font-size: 35px;
+  }
+}
